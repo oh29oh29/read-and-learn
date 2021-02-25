@@ -6,3 +6,4 @@
 * [objects](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects) 오브젝트: 코드로 이해하는 객체지향 설계
 * [implementing-ddd](https://github.com/oh29oh29/read-and-learn/tree/master/books/implementing-ddd) IMPLEMENTING DOMAIN-DRIVEN DESIGN: 도메인 주도 설계 구현
 * [clean-architecture](https://github.com/oh29oh29/read-and-learn/tree/master/books/clean-architecture) Clean Architecture: 소프트웨어 구조와 설계의 원칙
+* [java-orm-jpa](https://github.com/oh29oh29/read-and-learn/tree/master/books/java-orm-jpa) 자바 ORM 표준 JPA 프로그래밍
