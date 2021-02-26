@@ -7,13 +7,15 @@
 
 ### 엔티티 매니저 팩토리와 엔티티 매니저
 
-데이터베이스를 하나만 사용하는 애플리케이션은 일반적으로 EntityManagerFactory를 하나만 생성한다.  
-
-> EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa");
+데이터베이스를 하나만 사용하는 애플리케이션은 일반적으로 엔티티 매니저 팩토리 하나만 생성한다.  
+```text
+EntityManagerFactory emf = Persistence.createEntityManagerFactory("jpa");
+```
 
 필요할 때마다 엔티티 매니저 팩토리에서 엔티티 매니저를 생성한다.  
-
-> EntityManager em = emf.createEntityManager();
+```text
+EntityManager em = emf.createEntityManager();
+```
 
 엔티티 매니저 팩토리를 만드는 비용은 상당히 크다.  
 따라서 한 개만 만들어서 애플리케이션 전체에서 공유하도록 설계되어 있다.    
@@ -26,3 +28,23 @@
 즉, 트랜잭션을 시작할 때 커넥션을 획득한다.  
 
 하이버네이트를 포함한 JPA 구현체들은 엔티티 매니터 팩토리를 생성할 때 커넥션풀도 만드는데 이것은 J2SE 환경(ex. 스프링 프레임워크)에서 사용하는 방법이다.
+
+### 영속성 컨텍스트란?
+
+**엔티티를 영구 저장하는 환경이다.**  
+엔티티 매니저로 엔티티를 저장하거나 조회하면 엔티티 매니저는 영속성 컨텍스트에 엔티티를 보관하고 관리한다.  
+```text
+em.persist(member);
+```
+persist() 메서드는 엔티티 매니저를 사용해서 회원 엔티티를 영속성 컨텍스트에 저장한다.
+
+영속성 컨텍스트는 엔티티 매니저를 생성할 때 하나 만들어진다.  
+엔티티 매니저를 통해서 영속성 컨텍스트에 접근할 수 있고, 관리할 수 있다.  
+여러 엔티티 매니저가 같은 영속성 컨텍스트에 접근할 수도 있다. (자세한건 11장에서)
+
+### 엔티티의 생명주기
+
+비영속(new/transient): 영속성 컨텍스트와 전혀 관계가 없는 상태  
+영속(managed): 영속성 컨텍스트에 저장된 상태  
+준영속(detached): 영속성 컨텍스트에 저장되었다가 분리된 상태  
+삭제(removed): 삭제된 상태
