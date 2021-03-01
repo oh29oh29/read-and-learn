@@ -23,3 +23,29 @@ JPA는 엔티티가 실제 사용될 때까지 데이터베이스 조회를 지�
 - 설정 방법: @ManyToOne(fetch = FetchType.LAZY)
 
 즉시 로딩 시, 두 테이블을 조회해야 하므로 쿼리를 2번 실행할 것 같지만, 대부분의 JPA 구현체는 즉시 로딩을 최적화하기 위해 가능하면 조인 쿼리를 사용한다.
+
+### 지연 로딩 활용
+
+JPA 기본 패치 전략
+- @ManyToOne, @OneToOne: 즉시 로딩 (FetchType.EAGER)
+- @OneToMany, @ManyToMany: 지연 로딩 (FetchType.LAZY)
+
+JPA의 기본 fetch 전략은 연관된 엔티티가 하나면 즉시 로딩, 컬렉션이면 지연 로딩을 사용한다.  
+
+컬렉션을 하나 이상 즉시 로딩하는 것은 권장하지 않는다.  
+컬렉션 즉시 로딩은 항상 외부 조인을 사용한다.
+
+### 영속성 전이: CASCADE
+
+특정 엔티티를 영속 상태로 만들 때 연관된 엔티티도 함께 영속 상태로 만들고 싶으면 영속성 전이 기능을 사용한다.  
+JPA는 CASCADE 옵션으로 영속성 전이를 제공한다.  
+
+JPA에서 엔티티를 저장할 때 연관된 모든 엔티티는 영속 상태여야 한다.
+
+CASCADE의 종류
+- ALL: 모두 적용
+- PERSIST: 영속
+- MERGE: 병합
+- REMOVE: 삭제
+- REFRESH
+- DETACH
