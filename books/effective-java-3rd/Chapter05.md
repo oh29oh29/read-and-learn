@@ -23,6 +23,6 @@ public class SpellChecker {
 
 불변([17. 변경 가능성을 최소화하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter17.md)) 을 보장하여 같은 자원을 사용하려는 여러 클라이언트가 의존 객체들을 안심하고 공유할 수 있다.  
 
-의존 객체 주입은 생성자, 정적 팩토리([01. 생성자 대신 정적 팩터리 메서드를 고려하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter01.1md)), 빌더([02. 생성자에 매개변수가 많다면 빌더를 고려하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter02.md)) 모두 응용할 수 있다.  
+의존 객체 주입은 생성자, 정적 팩토리([01. 생성자 대신 정적 팩터리 메서드를 고려하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter01.md)), 빌더([02. 생성자에 매개변수가 많다면 빌더를 고려하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter02.md)) 모두 응용할 수 있다.  
 
 의존 객체 주입이 유연성과 테스트 용이성을 개선해주긴 하지만, 의존성이 아주 많은 큰 프로젝트에서는 코드를 어지럽게 만들기도 한다.
