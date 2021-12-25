@@ -11,9 +11,10 @@
 [04. 인스턴스화를 막으려거든 private 생성자를 사용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter04.md)  
 [05. 자원을 직접 명시하지 말고 의존 객체 주입을 사용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter05.md)  
 [06. 불필요한 객체 생성을 피하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter06.md)  
-[07. 다 쓴 객체 참조를 해제하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter07.md)
-[08. finalizer 와 cleaner 사용을 피하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter08.md)
+[07. 다 쓴 객체 참조를 해제하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter07.md)  
+[08. finalizer 와 cleaner 사용을 피하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter08.md)  
 [09. try-finally 보다는 try-with-resources 를 사용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter09.md)
 
 #### 모든 객체의 공통 메서드
-[10. equals 는 일반 규약을 지켜 재정의하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter10.md)
+[10. equals 는 일반 규약을 지켜 재정의하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter10.md)  
+[11. equals 를 재정의하려거든 hashCode 도 재정의하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter11.md)
