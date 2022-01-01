@@ -18,5 +18,6 @@
 #### 모든 객체의 공통 메서드
 [10. equals 는 일반 규약을 지켜 재정의하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter10.md)  
 [11. equals 를 재정의하려거든 hashCode 도 재정의하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter11.md)  
-[12. toString 을 항상 재정의하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter12.md)
-[13. clone 재정의는 주의해서 진행하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter13.md)
+[12. toString 을 항상 재정의하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter12.md)  
+[13. clone 재정의는 주의해서 진행하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter13.md)  
+[14. Comparable 을 구현할지 고려하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter14.md)  
