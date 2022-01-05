@@ -8,3 +8,4 @@
 * [clean-architecture](https://github.com/oh29oh29/read-and-learn/tree/master/books/clean-architecture) Clean Architecture: 소프트웨어 구조와 설계의 원칙
 * [java-orm-jpa](https://github.com/oh29oh29/read-and-learn/tree/master/books/java-orm-jpa) 자바 ORM 표준 JPA 프로그래밍
 * [effective-java-3rd](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd) 이펙티브 자바 3판
+* [how-networks-work-2nd](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd) 성공과 실패를 결정하는 1%의 네트워크 원리 2판
