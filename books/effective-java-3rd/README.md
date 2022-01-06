@@ -27,4 +27,4 @@
 [16. public 클래스에서는 public 필드가 아닌 접근자 메서드를 사용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter16.md)  
 [17. 변경 가능성을 최소화하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter17.md)  
 [18. 상속보다는 컴포지션을 사용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter18.md)  
-[19. 상속을 고려해 설계하고 문서화하라. 그러지 않았따면 상속을 금지하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter19.md)  
+[19. 상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter19.md)   
