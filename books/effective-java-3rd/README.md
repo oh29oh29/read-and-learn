@@ -30,3 +30,4 @@
 [19. 상속을 고려해 설계하고 문서화하라. 그러지 않았다면 상속을 금지하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter19.md)  
 [20. 추상 클래스보다는 인터페이스를 우선하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter20.md)  
 [21. 인터페이스는 구현하는 쪽을 생각해 설계하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter21.md)  
+[22. 인터페이스는 타입을 정의하는 용도로만 사용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter22.md)  
