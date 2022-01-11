@@ -32,3 +32,4 @@
 [21. 인터페이스는 구현하는 쪽을 생각해 설계하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter21.md)  
 [22. 인터페이스는 타입을 정의하는 용도로만 사용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter22.md)  
 [23. 태그 달린 클래스보다는 클래스 계층구조를 활용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter23.md)  
+[24. 멤버 클래스는 되도록 static 으로 만들라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter24.md)  
