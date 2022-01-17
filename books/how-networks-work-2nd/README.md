@@ -8,3 +8,4 @@ Tsutomu Tone 지음 | 이도희 옮김 | 이중호 감수 | 성안당 | 2020년 
 [01. HTTP 리퀘스트 메시지를 작성한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter01Story01.md)  
 [02. 웹 서버의 IP 주소를 DNS 서버에 조회한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter01Story02.md)  
 [03. 전 세계의 DNS 서버가 연대한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter01Story03.md)  
+[04. 프로토콜 스택에 메시지 송신을 의뢰한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter01Story04.md)  
