@@ -39,3 +39,4 @@
 [26. 로 타입은 사용하지 말라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter26.md)  
 [27. 비검사 경고를 제거하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter27.md)  
 [28. 배열보다는 리스트를 사용하라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter28.md)  
+[29. 이왕이면 제네릭 타입으로 만들라](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd/Chapter29.md)  
