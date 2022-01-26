@@ -14,3 +14,4 @@ Tsutomu Tone 지음 | 이도희 옮김 | 이중호 감수 | 성안당 | 2020년 
 [01. 소켓을 작성한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter02Story01.md)  
 [02. 서버에 접속한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter02Story02.md)  
 [03. 데이터를 송∙수신한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter02Story03.md)  
+[04. 서버에서 연결을 끊어 소켓을 말소한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter02Story04.md)  
