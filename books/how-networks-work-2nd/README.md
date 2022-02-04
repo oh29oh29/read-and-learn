@@ -26,3 +26,4 @@ PASS
 
 #### 서버측의 LAN 에는 무엇이 있는가?
 [01. 웹 서버의 설치 장소](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story01.md)  
+[02. 방화벽의 원리와 동작](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story02.md)  
