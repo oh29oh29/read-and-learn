@@ -29,3 +29,4 @@ PASS
 [02. 방화벽의 원리와 동작](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story02.md)  
 [03. 복수 서버에 리퀘스트를 분배한 서버의 부하 분산](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story03.md)  
 [04. 캐시 서버를 이용한 서버의 부하 분산](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story04.md)  
+[05. 콘텐츠 배포 서비스](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story05.md)  
