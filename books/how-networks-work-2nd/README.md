@@ -30,3 +30,6 @@ PASS
 [03. 복수 서버에 리퀘스트를 분배한 서버의 부하 분산](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story03.md)  
 [04. 캐시 서버를 이용한 서버의 부하 분산](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story04.md)  
 [05. 콘텐츠 배포 서비스](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story05.md)  
+
+#### 웹 서버에 도착하여 응답 데이터가 웹 브라우저로 돌아간다
+[01. 서버의 개요](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter06Story01.md)
