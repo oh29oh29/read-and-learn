@@ -32,4 +32,5 @@ PASS
 [05. 콘텐츠 배포 서비스](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter05Story05.md)  
 
 #### 웹 서버에 도착하여 응답 데이터가 웹 브라우저로 돌아간다
-[01. 서버의 개요](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter06Story01.md)
+[01. 서버의 개요](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter06Story01.md)  
+[02. 서버의 수신 동작](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter06Story02.md)  
