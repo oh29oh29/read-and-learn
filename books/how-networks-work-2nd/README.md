@@ -34,3 +34,4 @@ PASS
 #### 웹 서버에 도착하여 응답 데이터가 웹 브라우저로 돌아간다
 [01. 서버의 개요](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter06Story01.md)  
 [02. 서버의 수신 동작](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter06Story02.md)  
+[03. 웹 서버 소프트웨어가 리퀘스트 메시지의 의미를 해석하여 요구에 응한다](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd/Chapter06Story03.md)  
