@@ -11,3 +11,4 @@
 [05. 책임과 메시지](https://github.com/oh29oh29/read-and-learn/tree/master/books/the-essence-of-object-orientation/Chapter05.md)  
 [06. 객체 지도](https://github.com/oh29oh29/read-and-learn/tree/master/books/the-essence-of-object-orientation/Chapter06.md)  
 [07. 함께 모으기](https://github.com/oh29oh29/read-and-learn/tree/master/books/the-essence-of-object-orientation/Chapter07.md)  
+[부록 A. 추상화 기법](https://github.com/oh29oh29/read-and-learn/tree/master/books/the-essence-of-object-orientation/Appendix01.md)  
