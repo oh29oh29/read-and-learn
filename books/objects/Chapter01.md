@@ -244,3 +244,219 @@ public class TicketSeller {
     }
 }
 ```
+
+`ticketOffice`를 외부에서 접근할 수 없도록 했다.  
+따라서 `TicketSeller`는 `ticketOffice`에 대한 행위를 스스로 수행할 수밖에 없다.  
+
+이처럼 개념적/물리적으로 객체 내부의 세부적인 사항을 감추는 것을 캡슐화(encapsulation)라고 한다.  
+캡슐화의 목적은 변경하기 쉬운 객체를 만드는 것이다. 객체 간의 결합도를 낮출 수 있기 때문에 설계를 좀 더 쉽게 변경할 수 있게 된다.
+
+```java
+public class Theater {
+    private TicketSeller ticketSeller;
+    
+    public Theater(TicketSeller ticketSeller) {
+        this.ticketSeller = ticketSeller;
+    }
+    
+    public void enter(Audience audience) {
+        ticketSeller.sellTo(audience);
+    }
+}
+```
+
+`Theater`는 오직 `TicketSeller`의 인터페이스에만 의존한다.  
+
+이제는 `Audience`도 자율적인 객체로 만들어보자.
+
+```java
+public class Audience {
+    private Bag bag;
+    
+    public Audience(Bag bag) {
+        this.bag = bag;
+    }
+    
+    public Long buy(Ticket ticket) {
+        if (bag.hasInvitation()) {
+            bag.setTicket(ticket);
+            return 0L;
+        } else {
+            bag.setTicket(ticket);
+            bag.minusAmount(ticket.getFee());
+            return ticket.getFee();
+        }
+    }
+}
+```
+
+이제 `TicketSeller`가 `Audience`의 인터페이스에만 의존하도록 수정하자.
+
+```java
+public class TicketSeller {
+    private TicketOffice ticketOffice;
+
+    public TicketSeller(TicketOffice ticketOffice) {
+        this.ticketOffice = ticketOffice;
+    }
+
+    public void sellTo(Audience audience) {
+        ticketOffice.plusAmount(audience.buy(ticketOffice.getTicket()));
+    }
+}
+```
+
+#### 무엇이 개선됐는가
+
+객체들이 예상대로 행동한다. 따라서 코드를 읽는 사람과의 의사소통이라는 관점에서 개선된 것으로 보인다.  
+더 중요한 점은 내부 구현을 변경하더라도 의존하고 있던 객체에서 변경할 필요가 없어졌다는 것이다.
+
+#### 어떻게 한 것인가
+
+자기 자신의 문제를 스스로 해결하도록 코드를 변경한 것이다.  
+객체의 자율성을 높이는 방향으로 설계를 개선했다.  
+
+#### 캡슐화와 응집도
+
+핵심은 객체 내부의 상태를 캡슐화하고 객체 간에 오직 메시지를 통해서만 상호작용하도록 만드는 것이다.
+
+밀접하게 연관된 작업만을 수행하고 연관성 없는 작업은 다른 객체에게 위임하는 객체를 가리켜 응집도(cohesion)가 높다고 말한다.  
+객체의 응집도를 높이기 위해서는 객체 스스로 자신의 데이터를 책임져야 한다.
+
+#### 절차지향과 객체지향
+
+수정 전 코드 관점에서 `Theater`의 `enter` 메서드는 프로세스이며 `Audience`, `TicketSeller`, `Bag`, `TicketOffice`는 데이터다.  
+이처럼 프로세스와 데이터를 별도의 모듈에 위치시키는 방식을 절차적 프로그래밍이라고 부른다.  
+절차적 프로그래밍은 프로세스가 필요한 모든 데이터에 의존해야 한다는 근본적인 문제점 때문에 변경에 취약하다.
+
+수정한 코드에서는 데이터를 사용하는 프로세스를 데이터를 소유하고 있는 `Audience`와 `TicketSeller` 내부로 옮겼다.  
+이처럼 데이터와 프로세스가 동일한 모듈 내부에 위치하도록 프로그래밍하는 방식을 객체지향 프로그래밍이라고 부른다.
+객체지향 코드는 자신의 문제를 스스로 처리해야 한다는 예상을 만족시켜주기 때문에 이해하기 쉽고, 객체 내부의 변경이 외부에 파급되지 않도록 제어 할 수 있기 때문에 변경이 수월하다.
+
+#### 책임의 이동
+
+두 방식 사이에 근본적인 차이를 만드는 것은 책임의 이동이다.
+
+절차적 프로그래밍 방식으로 작성된 수정 전 코드에서는 책임이 `Theater`에 집중되어 있었다.  
+객체지향 설계에서는 `Theater`에 집중되어 있던 책임이 개별 객체로 이동했다.
+
+불필요한 세부사항을 캡슐화하는 자율적인 객체들이 낮은 결합도와 높은 응집도를 가지고 협력하도록 최소한의 의존성만을 남기는 것이 훌륭한 객체지향 설계다.
+
+#### 더 개선할 수 있다
+
+`Bag`를 자율적인 존재로 바꿔보자.
+
+```java
+public class Bag {
+    private Long amount;
+    private Invitation invitation;
+    private Ticket ticket;
+    
+    public Bag(Long amount) {
+        this(null, amount);
+    }
+
+    public Bag(Invitation invitation, Long amount) {
+        this.invitation = invitation;
+        this.amount = amount;
+    }
+
+    public Long hold(Ticket ticket) {
+        if (hasInvitation()) {
+            setTicket(ticket);
+            return 0L;
+        } else {
+            setTicket(ticket);
+            minusAmount(ticket.getFee());
+            return ticket.getFee();
+        }
+    }
+
+    private boolean hasInvitation() {
+        return invitation != null;
+    }
+
+    private void setTicket(Ticket ticket) {
+        this.ticket = ticket;
+    }
+
+    private void minusAmount(Long amount) {
+        this.amount -= amount;
+    }
+}
+```
+
+<br>
+
+이제 `Audience`를 `Bag`의 구현이 아닌 인터페이스에만 의존하도록 수정하자.
+
+```java
+public class Audience {
+    public Long buy(Ticket ticket) {
+        return bag.hold(ticket);
+    }
+}
+```
+
+<br>
+
+`TicketOffice`도 자율적인 객체로 만들어주자.
+
+```java
+public class TicketOffice {
+    public void sellTicketTo(Audience audience) {
+        plusAmount(audience.buy(getTicket()));
+    }
+    
+    private Ticket getTicket() {
+        return tickets.remove(0);
+    }
+    
+    private void plusAmount(Long amount) {
+        this.amount += amount;
+    }
+}
+```
+
+<br>
+
+`TicketSeller`가 `TicketOffice`의 구현이 아닌 인터페이스에만 의존하게 되었다.
+
+```java
+public class TicketSeller {
+    public void sellTo(Audience audience) {
+        ticketOffice.sellTicketTo(audience);
+    }
+}
+```
+
+변경 후에는 `TicketOffice`가 `Audience`에게 직접 티켓을 판매하기 때문에 `Audience`에 관해 알고 있어야 한다.  
+변경 전에는 존재하지 않았던 새로운 의존성이 추가된 것이다. 즉, `TicketSeller`의 자율성은 높였지만 전체 설계 관점에서 결합도가 상승했다.
+
+어떤 기능을 설계하는 방법은 한 가지 이상일 수 있다.  
+동일한 기능을 한 가지 이상의 방법으로 설계할 수 있기 결국 설계는 트레이드오프의 산물이다. 
+
+#### 그래, 거짓말이다!
+
+현실에서는 수동적인 존재라고 하더라도 일단 객체지향의 세계에 들어오면 모든 것이 능동적이고 자율적인 존재로 바뀐다.  
+레베카 워프스브록은 이처럼 능동적이고 자율적인 존재로 소프트웨어 객체를 설계하는 원칙을 가리켜 의인화라고 부른다.
+
+훌륭한 객체지향 설계란 소프트웨어를 구성하는 모든 객체들이 자율적으로 행동하는 설계를 가리킨다.  
+그 대상이 실세계에서는 생명이 없는 수동적인 존재라고 하더라도 객체지향 세계에서는 생명과 지능을 가진 존재가 되는 것이다.
+
+### 객체지향 설계
+
+#### 설계가 왜 필요한가
+
+설계는 코드를 작성하는 매 수간 코드를 어떻게 배치할 것인지를 결정하는 과정에서 나온다.  
+설계는 코드 작성의 일부이며 코드를 작성하지 않고서는 검증할 수 없다.
+
+좋은 설계란 오늘 요구하는 기능을 온전히 수행하면서 내일의 변경을 매끄럽게 수용할 수 있는 설계다.
+
+#### 객체지향 설계
+
+훌륭한 객체지향 설계란 협력하는 객체 사이의 의존성을 적절하게 관리하는 설계다.  
+객체 간의 의존성은 애플리케이션을 수정하기 어렵게 만드는 주범이다.
+
+데이터와 프로세스를 하나의 덩어리로 모으는 것은 훌륭한 객체지향 설계로 가는 첫걸음일 뿐이다.  
+진정한 객체지향 설계로 나아가는 길은 협력하는 객체들 사이의 의존성을 적절하게 조절함으로써 변경에 용이한 설계를 만드는 것이다.
