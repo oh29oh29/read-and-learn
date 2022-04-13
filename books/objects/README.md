@@ -7,3 +7,4 @@
 ### INDEX
 
 [01. 객체, 설계](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter01.md)
+[02. 객체지향 프로그래밍](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter02.md)
