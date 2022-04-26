@@ -11,3 +11,4 @@
 [03. 역할, 책임, 협력](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter03.md)  
 [04. 설계 품질과 트레이드오프](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter04.md)  
 [05. 책임 할당하기](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter05.md)  
+[06. 메시지와 인터페이스](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter05.md)  
