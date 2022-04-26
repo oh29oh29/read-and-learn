@@ -14,3 +14,4 @@
 [06. 메시지와 인터페이스](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter06.md)  
 [07. 객체 분해](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter07.md)  
 [08. 의존성 관리하기](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter08.md)  
+[09. 유연한 설계](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter09.md)  
