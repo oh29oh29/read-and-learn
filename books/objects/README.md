@@ -18,3 +18,4 @@
 [10. 상속과 코드 재사용](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter10.md)  
 [11. 합성과 유연한 설계](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter11.md)  
 [12. 다형성](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter12.md)  
+[13. 서브클래싱과 서브타이핑](https://github.com/oh29oh29/read-and-learn/tree/master/books/objects/Chapter13.md)  
