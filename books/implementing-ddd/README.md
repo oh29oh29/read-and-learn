@@ -5,3 +5,4 @@
 ### INDEX
 
 [01. DDD를 시작하며](https://github.com/oh29oh29/read-and-learn/tree/master/books/implementing-ddd/Chapter01.md)  
+[02. 도메인, 서브도메인, 바운디드 컨텍스트](https://github.com/oh29oh29/read-and-learn/tree/master/books/implementing-ddd/Chapter02.md)  
