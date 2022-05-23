@@ -8,3 +8,4 @@
 [02. 도메인, 서브도메인, 바운디드 컨텍스트](https://github.com/oh29oh29/read-and-learn/tree/master/books/implementing-ddd/Chapter02.md)  
 [03. 컨텍스트 맵](https://github.com/oh29oh29/read-and-learn/tree/master/books/implementing-ddd/Chapter03.md)  
 [04. 아키텍처](https://github.com/oh29oh29/read-and-learn/tree/master/books/implementing-ddd/Chapter04.md)  
+[05. 엔티티](https://github.com/oh29oh29/read-and-learn/tree/master/books/implementing-ddd/Chapter05.md)  
