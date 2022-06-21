@@ -10,3 +10,4 @@
 * [effective-java-3rd](https://github.com/oh29oh29/read-and-learn/tree/master/books/effective-java-3rd) 이펙티브 자바 3판
 * [how-networks-work-2nd](https://github.com/oh29oh29/read-and-learn/tree/master/books/how-networks-work-2nd) 성공과 실패를 결정하는 1%의 네트워크 원리 2판
 * [the-essence-of-object-orientation](https://github.com/oh29oh29/read-and-learn/tree/master/books/the-essence-of-object-orientation) 객체지향의 사실과 오해
+* [designing-data-intensive-applications](https://github.com/oh29oh29/read-and-learn/tree/master/books/designing-data-intensive-applications) 데이터 중심 애플리케이션 설계
