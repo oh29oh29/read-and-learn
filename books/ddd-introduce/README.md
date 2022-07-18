@@ -5,3 +5,4 @@
 ### INDEX
 
 [01. 도메인 주도 설계란?](https://github.com/oh29oh29/read-and-learn/tree/master/books/ddd-introduce/Chapter01.md)  
+[02. 시스템 특유의 값을 나타내기 위한 '값 객체'](https://github.com/oh29oh29/read-and-learn/tree/master/books/ddd-introduce/Chapter02.md)  
