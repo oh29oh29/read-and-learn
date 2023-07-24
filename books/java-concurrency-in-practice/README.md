@@ -5,3 +5,4 @@
 ### INDEX
 
 [05. 구성 단위](https://github.com/oh29oh29/read-and-learn/tree/master/books/java-concurrency-in-practice/Chapter05.md)  
+[06. 작업 실행](https://github.com/oh29oh29/read-and-learn/tree/master/books/java-concurrency-in-practice/Chapter06.md)  

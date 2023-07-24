@@ -17,4 +17,11 @@ java 5.0에는 hash기반의 `HashMap`을 대치하면서 병렬성을 확보한
 
 `BlockingQueue` 클래스는 producer-consumer 패턴을 구현할 때 굉장히 편리함
 
+#### ConcurrentHashMap
 
+기존 synchronized collection 클래스는 각 연산을 수행하는 동안 항상 락을 확보하고 있어야 했지만 `ConcurrentHashMap`은 
+락 스트라이핑(lock striping)이라 부르는 세밀한 동기화 방법을 사용해 여러 thread에서 공유하는 상태에 훨씬 잘 대응할 수 있음
+
+`ConcurrentHashMap`을 사용하면 `HashTable`이나 `synchronizedMap` 메소드를 사용하는 것에 비해 단점이 있기는 하지만, 장점이 훨씬 많음
+
+자세한 내용은 책 참조 및 구현체를 직접 확인해보자
