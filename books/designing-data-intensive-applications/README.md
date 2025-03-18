@@ -6,4 +6,5 @@
 
 #### Part 1. 데이터 시스템의 기초
 [01. 신뢰할 수 있고 확장 가능하며 유지보수하기 쉬운 애플리케이션](https://github.com/oh29oh29/read-and-learn/tree/master/books/designing-data-intensive-applications/Chapter01.md)  
+[03. 저장소와 검색](https://github.com/oh29oh29/read-and-learn/tree/master/books/designing-data-intensive-applications/Chapter03.md)  
 [05. 복제](https://github.com/oh29oh29/read-and-learn/tree/master/books/designing-data-intensive-applications/Chapter05.md)  
